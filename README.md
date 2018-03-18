@@ -1,2 +1,5 @@
-# CT_HW-3-Follow-the-line
-The task is to find best coefficients for pid controller of lego robot(any configuration) and explain values that you get.
+– description of the project
+– description of the work process (what problems do you have and how you solved them)
+– explanation of the result values (how you got them)
+– explanation why do you think this values are the best
+– link to youtube video (not longer than 1 minute) that shows move- ment of your robot

@@ -15,8 +15,11 @@ First of all I created
 
 After I got the satisfying result on smooth lines, I started to select the coefficients, suitable for more steep turns
 Tere are the results I got:
+
 Kp = 300;
+
 Ki = 0.3;
+
 Kd = 30;
 
 ---

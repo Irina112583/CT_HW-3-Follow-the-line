@@ -1,4 +1,4 @@
-## Lego mindstorm robot follow the line
+## Lego mindstorm robot following the line
 
 ---
 

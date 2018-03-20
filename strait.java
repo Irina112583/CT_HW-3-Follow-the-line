@@ -1,7 +1,6 @@
 package linefollow;
 
 import lejos.hardware.motor.EV3LargeRegulatedMotor;
-import lejos.hardware.Button;
 import lejos.hardware.port.MotorPort;
 import lejos.hardware.port.SensorPort;
 import lejos.hardware.sensor.EV3ColorSensor;
@@ -18,32 +17,26 @@ public class strait {
 class PID{
 	public void run() {
 		EV3LargeRegulatedMotor leftMotor = new EV3LargeRegulatedMotor(MotorPort.B);
-	    EV3LargeRegulatedMotor rightMotor = new EV3LargeRegulatedMotor(MotorPort.C);
-	    EV3ColorSensor rightSensor = new EV3ColorSensor(SensorPort.S3);
-	    EV3ColorSensor leftSensor = new EV3ColorSensor(SensorPort.S1);
-	    double Kp = 300;
-	    double Ki = 0.3;
-	    double Kd = 30;
+		EV3LargeRegulatedMotor rightMotor = new EV3LargeRegulatedMotor(MotorPort.C);
+		EV3ColorSensor rightSensor = new EV3ColorSensor(SensorPort.S3);
+		EV3ColorSensor leftSensor = new EV3ColorSensor(SensorPort.S1);
+		double Kp = 300;
+		double Ki = 0.3;
+		double Kd = 30;
    
-	double integral = 0;
-	double lastError = 0;
-	double derivative = 0;
+		double integral = 0;
+		double lastError = 0;
+		double derivative = 0;
     
-	
+        	double Tp = 180;
+        	double turn;
+        	double leftPower;
+        	double rightPower;
 
-    double Tp = 180;
-    double turn;
-    double leftPower;
-    double rightPower;
-
-    float error;
-        
-        // System.out.println("Press any key to start");
-         
-         //Button.waitForAnyPress();
+        	float error;
           
           while(true) {
-        	      SensorMode rightLightVal = rightSensor.getRedMode();
+              SensorMode rightLightVal = rightSensor.getRedMode();
               float[] rightValue = new float[rightLightVal.sampleSize()];
               rightLightVal.fetchSample(rightValue, 0);
               
@@ -70,5 +63,5 @@ class PID{
               lastError = error;
            
           }
-	}
+     }
 }

@@ -1,9 +1,32 @@
-– description of the project
+## Lego mindstorm robot follow the line
 
-– description of the work process (what problems do you have and how you solved them)
+---
 
-– explanation of the result values (how you got them)
+### Description of the project
 
-– explanation why do you think this values are the best
+In this project my task was to implenet the algorithm, that makes lego mindstorm robot follow the line.
 
-– link to youtube video (not longer than 1 minute) that shows move- ment of your robot
+---
+
+### Description of the work process, explanation of the result values
+
+For the implementation I've chosen Java programming language.
+First of all I created 
+
+After I got the satisfying result on smooth lines, I started to select the coefficients, suitable for more steep turns
+Tere are the results I got:
+Kp = 300;
+Ki = 0.3;
+Kd = 30;
+
+---
+
+### Why do I think this values are the best
+
+The values I found are the best, because
+
+---
+
+### Link to youtube video
+https://youtu.be/pBWnlNOORG4
+

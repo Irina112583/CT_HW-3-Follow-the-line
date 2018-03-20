@@ -11,7 +11,14 @@ In this project my task was to implenet the algorithm, that makes lego mindstorm
 ### Description of the work process, explanation of the result values
 
 For the implementation I've chosen Java programming language.
-First of all I created 
+
+So first of all I created SD card with LeJos(is a firmware replacement for Lego Mindstorms programmable bricks). 
+
+Then, of course, I built a robot.
+
+
+
+From the very beggining I started with only one sensor, but that was not enough to find out what way should the robot turn, so I added one more sensor.
 
 After I got the satisfying result on smooth lines, I started to select the coefficients, suitable for more steep turns
 Tere are the results I got:
